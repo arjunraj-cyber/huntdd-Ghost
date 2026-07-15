@@ -1,0 +1,5 @@
+Cd huntdd-Ghost : Get into the workspace. Don't run the tool until you're inside the directory.
+
+go run main.go : Launch the scan. If you don't specify a path, it defaults to the current folder.
+
+go run main.go -scan [path] : Target a specific location. Replace [path] with the directory you want to audit.
