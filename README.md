@@ -9,10 +9,10 @@ git clone https://github.com/arjunraj-cyber/huntdd-Ghost.git
 
 cd huntdd-Ghost
 
-go run main.go
+go run huntdd.go
 
 To scan a specific path : 
-go run main.go -scan /path/to/your/files
+go run huntdd.go -scan /path/to/your/files
 
 
 ⚠️ Disclaimer
