@@ -30,7 +30,6 @@ func main() {
 			return nil
 		}
 
-		// ENUMERATION: Track all binaries/configs
 		if !info.IsDir() {
 			processFile(path, info)
 		}
@@ -42,12 +41,10 @@ func main() {
 }
 
 func processFile(path string, info fs.FileInfo) {
-	// Identify Sensitive Enumeration
 	if strings.Contains(info.Name(), ".env") || strings.Contains(info.Name(), "config.") {
 		fmt.Printf("[!] ENUMERATED SENSITIVE: %s\n", path)
 	}
 
-	// Vulnerability Check via Hashing
 	if strings.HasSuffix(info.Name(), ".exe") || strings.HasSuffix(info.Name(), ".elf") {
 		hash, _ := getFileHash(path)
 		if reason, exists := vulnerabilityDB[hash]; exists {
@@ -55,7 +52,6 @@ func processFile(path string, info fs.FileInfo) {
 		}
 	}
 
-	// Permission Audit
 	if info.Mode()&0002 != 0 {
 		fmt.Printf("[!] INSECURE PERMISSIONS: %s\n", path)
 	}
