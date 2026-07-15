@@ -11,7 +11,7 @@ cd huntdd-Ghost
 
 go run main.go
 
-To scan a specific path;
+To scan a specific path : 
 go run main.go -scan /path/to/your/files
 
 
