@@ -6,7 +6,9 @@ This tool is purely for auditing. It does not modify, delete, or clean files. It
 To get this tool you need GO installed on your machine.
 
 git clone https://github.com/arjunraj-cyber/huntdd-Ghost.git
+
 cd huntdd-Ghost
+
 go run main.go
 
 To scan a specific path;
