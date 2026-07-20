@@ -74,7 +74,7 @@ func printBanner() {
 	fmt.Println(`
                              .---.                                    
                             /  _  \                                 
-                            | (o)  |      HUNTDD GHOST           
+                           |  (o)  |      HUNTDD GHOST           
                             \  _  /                                
                               | | 
 							 I don't hunt ghosts, I am the Ghost. I hunt for you.                              
